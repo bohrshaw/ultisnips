@@ -4,7 +4,8 @@ endif
 let b:did_autoload_ultisnips = 1
 
 " Ensure snippets are loaded for current buffer
-au UltiSnips_AutoTrigger FileType,BufEnter * call UltiSnips#CheckFiletype()
+" au UltiSnips_AutoTrigger FileType,BufEnter * call UltiSnips#CheckFiletype()
+au UltiSnips_AutoTrigger FileType * call UltiSnips#CheckFiletype()
 
 " Also import vim as we expect it to be imported in many places.
 py3 import vim
